@@ -1,10 +1,10 @@
 This command line utility applies an emulation to images taken with a full-spectrum or IR converted digital camera to (kind of) make the images look they were taken with Aerochrome.
 
-Windows exe here:
+[Standalone Windows exe here.](https://github.com/w-renk/simuchrome/releases/tag/v1.0)
 
 Based on the [method proposed by Flickr user jw_wong](https://www.flickr.com/photos/jw_wong/4960099202/) in 2010, which I found out about [from this 2023 video by Jason Kummerfeldt](https://www.youtube.com/watch?v=v5KBQd_DkQw).
 
-The math doesn't match exactly, but it's pretty close. At least close enough that some light curves/levels adjustments in a photo editor are enough to complete the look. This just saves the effort of manually setting up subtraction and adjustment layers to get to a composited image. If you have a suggestion for improving the math, feel free to open an issue.
+The math isn't quite the same, but it's close enough that some light curves/levels adjustments in a photo editor are enough to complete the look. This just saves the effort of manually setting up subtraction and adjustment layers to get to a composited image. If you have a suggestion for improving the math, feel free to open an issue.
 
 If you prefer taking a more hands on approach, Jason's method is pretty straightforward and allows more control and experimentaion during the compositing process. This program just allows you to quickly apply a consistent emulation profile that you can adjust to your camera sensor.
 
