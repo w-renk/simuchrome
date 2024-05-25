@@ -9,16 +9,16 @@
 # toward yellow or cyan, depending on the final gamma of the IR (red) channel
 # values above one will remove excess data from the incoming red channel, overall decreasing the amount
 # of green and pushing the image toward magenta
-RInIrFrac = 0.9 # should be greater than 0, values much higher than 1 will start clipping the output G to black
+RInIrFrac = 0.7 # should be greater than 0, values much higher than 1 will start clipping the output G to black
 
 # same as the red fraction scalar, smaller values will increase the amount of IR data kept on the green
 # channel thus increasing the amount of blue in the final image, pushing the image toward magenta or cyan
 # values greater than 1 will reduce the amount of blue pushing the image toward yellow
-GInIrFrac = 1.0 # should be greater than 0, values much higher than 1 will start clipping the output B to black
+GInIrFrac = 0.8 # should be greater than 0, values much higher than 1 will start clipping the output B to black
 
 # gamma values to apply to individual channels before exporting image
 # adjust these to balance the color channels with each other
 # should be greater than 0, low values result in a darker image, higher values will create a brighter image
-ROutGamma = 0.9
-GOutGamma = 1.05
-BOutGamma = 1.0
+ROutGamma = 1.7
+GOutGamma = 1.9
+BOutGamma = 1.9
