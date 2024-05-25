@@ -14,6 +14,8 @@ Images must be taken on a camera sensitive to infrared light and through a filte
 
 I would recommend shooting in RAW, then adjusting the exposure in your preferred RAW processor and exporting to PNG or BMP. The program internally converts images to bitmaps before performing adjustment, so if you start with a JPEG, any compression artifacts will be baked into the image before it gets compressed again.
 
+Also included is the Darktable style I use before running images through the simuchrome script. It sets the tint to 1.3 and the white balance to 2500K in addition to applying haze removal and the default denoise, hot pixel, and sharpen settings. The camera I use is a Sony a6000, so this style as well as the default settings in the simulation.toml file are tuned for that camera and sensor shot in bright daylight.
+
 ## Usage
 Python:
 ```
@@ -26,7 +28,7 @@ Executable
 simuchrome.exe infile [--simulation, -s] outfile
 ```
 
-`--simulation` or `-s` is a path to toml file containing custom values for the calculations. It must be in the same format as the included simulation.toml file, or you can edit the values directly in that file and run the program without the -s option. Explanations of the values and their effects on the output image are described in simulation.toml. At a minimum, the RInIrFrac and GInIrFrac values need to be adjusted based on your camera sensor and the exact filter(s) you use.
+`--simulation` or `-s` should be followed by a path to toml file containing custom values for the calculations. It must be in the same format as the included simulation.toml file, or you can edit the values directly in that file and run the program without the -s option. Explanations of the values and their effects on the output image are described in simulation.toml. At a minimum, the RInIrFrac and GInIrFrac values need to be adjusted based on your camera sensor and the exact filter(s) you use.
 
 ## Theory
 
