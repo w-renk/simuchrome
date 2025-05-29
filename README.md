@@ -10,7 +10,7 @@ If you prefer taking a more hands on approach, Jason's method is pretty straight
 
 ## Input image
 
-Images must be taken on a camera sensitive to infrared light and through a filter (or filter stack) that cuts out wavelengths longer than ~500 nanometers. A Tiffen Yellow 15 is pretty much perfect for this. You could probably get away with using a Yellow 12 or an Orange 16, but you'd be allowing some blue or cutting some green respectively.
+Images must be taken on a camera sensitive to infrared light and through a filter (or filter stack) that cuts out wavelengths shorter than ~500 nanometers. A Tiffen Yellow 15 is pretty much perfect for this. You could probably get away with using a Yellow 12 or an Orange 16, but you'd be allowing some blue or cutting some green respectively.
 
 I would recommend shooting in RAW, then adjusting the exposure in your preferred RAW processor and exporting to PNG or BMP. The program internally converts images to bitmaps before performing adjustment, so if you start with a JPEG, any compression artifacts will be baked into the image before it gets compressed again.
 
